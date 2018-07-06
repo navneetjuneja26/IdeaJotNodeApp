@@ -1,0 +1,16 @@
+<div class="card card-body">
+    <h3>Edit Idea</h3>
+    <form action="/ideas/{{idea.id}}?_method=PUT" method="post" class="u-center-block">
+        <input type="hidden" name="_method" value="PUT">
+        <div class="form-group">
+            <label for="title">Title</label>
+            <input type="text" class="form-control" name="title" placeholder="Enter the title" value="{{idea.title}}">
+        </div>
+        <div class="form-group">
+            <label for="details">Details</label>
+            <textarea name="details" cols="30" rows="10" class="form-control" placeholder="Type details here">{{idea.details}}</textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>    
+    </form>
+</div>
+
